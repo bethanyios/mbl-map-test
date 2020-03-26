@@ -14,12 +14,13 @@ const MyMap = (props) => {
   const displayMarker = () => {
       return services.map((service, index) => {
         return <Marker key={index} id={index} position={{
-         lat: services.lat,
-         lng: services.lng,
+         lat: service.lat,
+         lng: service.lng,
        }}
     />
 })
 }
+console.log(services[0].lat);
     return (
         <Map
           google={props.google}
@@ -28,6 +29,7 @@ const MyMap = (props) => {
           initialCenter={{ lat: 53.507351, lng: 0.127758}}
           >
           {displayMarker()}
+
         </Map>
     )
 }

@@ -1,3 +1,5 @@
+An app by [@jc2820](https://github.com/jc2820) and [@bethanyios](https://github.com/bethanyios) to test google map usage.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

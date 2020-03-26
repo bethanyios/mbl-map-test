@@ -1,6 +1,7 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
-import services from './utils/services.js'
+import services from './utils/services.js';
+import serviceMark from './assets/watermelon.svg';
 
 const mapStyles = {
     width: '100vw',
@@ -17,6 +18,12 @@ const MyMap = (props) => {
          lat: service.lat,
          lng: service.lng,
        }}
+       icon={{
+         url: serviceMark,
+         anchorPoint: [-50,0]
+       }}
+
+
     />
 })
 }
@@ -24,9 +31,10 @@ console.log(services[0].lat);
     return (
         <Map
           google={props.google}
-          zoom={6}
+          zoom={7}
           style={mapStyles}
-          initialCenter={{ lat: 53.507351, lng: 0.127758}}
+          initialCenter={{ lat: 53, lng: 0.127758}}
+
           >
           {displayMarker()}
 

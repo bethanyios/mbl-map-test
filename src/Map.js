@@ -44,5 +44,5 @@ console.log(services[0].lat);
 
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyDVVvArLl32Y8YQSPgSh2Mv89hOmdfIOQw'
+    apiKey: ''
   })(MyMap);
